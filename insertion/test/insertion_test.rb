@@ -11,10 +11,15 @@ class InsertionSortTest < Minitest::Test
     assert_instance_of InsertionSort, sorter
   end
 
-  def test_it_can_sort
+  def test_it_can_sort_numbers
     sorter = InsertionSort.new
-    assert_equal  ["a", "b", "c", "d"], sorter.sort(["d", "b", "a", "c"])
-  end 
+    assert_equal  [1, 2, 3, 4], sorter.sort([2, 4, 3, 1])
+  end
+
+  # def test_it_can_sort_letters
+  #   sorter = InsertionSort.new
+  #   assert_equal  ["a", "b", "c", "d"], sorter.sort(["d", "b", "a", "c"])
+  # end
 
 end
 
